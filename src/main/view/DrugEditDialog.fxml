@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="348.0" prefWidth="429.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.view.DrugEditDialogController">
+    <children>
+        <GridPane layoutX="100.0" layoutY="21.0" prefHeight="232.0" prefWidth="385.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="30.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.3333740234375" minWidth="4.999972025553376" prefWidth="122.33333333333333" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.3333333333333" minWidth="10.0" prefWidth="262.3333333333333" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Drug Name" />
+                <Label text="Drug Class" GridPane.rowIndex="1" />
+                <Label text="Type Name" GridPane.rowIndex="2" />
+                <Label text="Type Description" GridPane.rowIndex="3" />
+                <Label text="Side Effects" GridPane.rowIndex="4" />
+                <TextField fx:id="drugNameField" prefHeight="25.0" prefWidth="417.0" GridPane.columnIndex="1" />
+                <TextField fx:id="drugClassField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="typeNameField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="typeDescriptionField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="sideEffectField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            </children>
+        </GridPane>
+        <Button layoutX="188.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="33.0" prefWidth="97.0" stylesheets="@style.css" text="Ok" textAlignment="CENTER" />
+        <Button layoutX="301.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="33.0" prefWidth="97.0" stylesheets="@style.css" text="Cancel" textAlignment="CENTER" />
+    </children>
+</AnchorPane>

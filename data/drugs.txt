@@ -1,0 +1,6 @@
+Insulin | Rapid acting | Lispro | null | hypoglycaemia
+Insulin | Rapid acting | Aspart | null | hypoglycaemia
+Insulin | Short acting | Regular Insulin | null | hypoglycaemia
+Insulin | Intermediate acting | NPH | null |  hypoglycaemia
+Insulin | Long acting | glargine | null | hypoglycaemia
+Insulin | Long acting | determir | null | hypoglycaemia
